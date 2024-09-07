@@ -1,0 +1,137 @@
+{
+  "Project" : "urn:bill:MonoSpatializer_ui",
+  "Base project" : "urn:bill:MonoSpatializer",
+  "Name" : "MonoSpatializer",
+  "Author" : "bill",
+  "Window size" : [ 480 , 275 ] ,
+  "Audio Inputs" : 1 ,
+  "Audio Outputs" : 2 ,
+  "MIDI Input" : 0 ,
+  "MIDI Output" : 0 ,
+  "LV2 bypass" : 0 ,
+  "Controls" : 5 ,
+  "Colors" : [
+    {
+      "NORMAL" : [
+        ".fg" :       [ 0.850, 0.850, 0.850, 1.000] ,
+        ".bg" :       [ 0.100, 0.100, 0.100, 1.000] ,
+        ".base" :     [ 0.000, 0.000, 0.000, 1.000] ,
+        ".text" :     [ 0.900, 0.900, 0.900, 1.000] ,
+        ".shadow" :   [ 0.000, 0.000, 0.000, 0.200] ,
+        ".frame" :    [ 0.000, 0.000, 0.000, 1.000] ,
+        ".light" :    [ 0.100, 0.100, 0.100, 1.000] 
+      ] ,
+      "PRELIGHT" : [
+        ".fg" :       [ 1.000, 0.000, 1.000, 1.000] ,
+        ".bg" :       [ 0.250, 0.250, 0.250, 1.000] ,
+        ".base" :     [ 0.300, 0.300, 0.300, 1.000] ,
+        ".text" :     [ 1.000, 1.000, 1.000, 1.000] ,
+        ".shadow" :   [ 0.100, 0.100, 0.100, 0.400] ,
+        ".frame" :    [ 0.300, 0.300, 0.300, 1.000] ,
+        ".light" :    [ 0.300, 0.300, 0.300, 1.000] 
+      ] ,
+      "SELECTED" : [
+        ".fg" :       [ 0.900, 0.900, 0.900, 1.000] ,
+        ".bg" :       [ 0.200, 0.200, 0.200, 1.000] ,
+        ".base" :     [ 0.500, 0.180, 0.180, 1.000] ,
+        ".text" :     [ 1.000, 1.000, 1.000, 1.000] ,
+        ".shadow" :   [ 0.800, 0.180, 0.180, 0.200] ,
+        ".frame" :    [ 0.500, 0.180, 0.180, 1.000] ,
+        ".light" :    [ 0.500, 0.180, 0.180, 1.000] 
+      ] ,
+      "ACTIVE" : [
+        ".fg" :       [ 0.000, 1.000, 1.000, 1.000] ,
+        ".bg" :       [ 0.000, 0.000, 0.000, 1.000] ,
+        ".base" :     [ 0.180, 0.380, 0.380, 1.000] ,
+        ".text" :     [ 0.750, 0.750, 0.750, 1.000] ,
+        ".shadow" :   [ 0.180, 0.380, 0.380, 0.500] ,
+        ".frame" :    [ 0.180, 0.380, 0.380, 1.000] ,
+        ".light" :    [ 0.180, 0.380, 0.380, 1.000] 
+      ] ,
+      "INSENSITIVE" : [
+        ".fg" :       [ 0.850, 0.850, 0.850, 0.500] ,
+        ".bg" :       [ 0.100, 0.100, 0.100, 0.500] ,
+        ".base" :     [ 0.000, 0.000, 0.000, 0.500] ,
+        ".text" :     [ 0.900, 0.900, 0.900, 0.500] ,
+        ".shadow" :   [ 0.000, 0.000, 0.000, 0.100] ,
+        ".frame" :    [ 0.000, 0.000, 0.000, 0.500] ,
+        ".light" :    [ 0.100, 0.100, 0.100, 0.500] 
+      ] ,
+    }
+  ] ,
+  "IS_KNOB" : [
+    {
+      "Type" : "add_lv2_knob",
+      "Label" : "DELAY MILLISECONDS",
+      "Port" : 3 ,
+      "Symbol" : "DELAYMILLISECONDS",
+      "Size" : [ 25 , 12 , 171 , 226 ] ,
+      "Image" : "None",
+      "Adjustment" : "CL_CONTINUOS",
+      "Default Value" : 20.000000 ,
+      "Min Value" : 1.000000 ,
+      "Max Value" : 40.000000 ,
+      "Step Size" : 1.000000 ,
+    }
+  ] ,
+  "IS_KNOB" : [
+    {
+      "Type" : "add_lv2_knob",
+      "Label" : "IMAGE VOLUME",
+      "Port" : 4 ,
+      "Symbol" : "IMAGEVOLUME",
+      "Size" : [ 218 , 98 , 113 , 80 ] ,
+      "Image" : "None",
+      "Adjustment" : "CL_CONTINUOS",
+      "Default Value" : 0.000000 ,
+      "Min Value" : -96.000000 ,
+      "Max Value" : 0.000000 ,
+      "Step Size" : 0.100000 ,
+    }
+  ] ,
+  "IS_KNOB" : [
+    {
+      "Type" : "add_lv2_knob",
+      "Label" : "LOW PASS FILTER FREQ",
+      "Port" : 5 ,
+      "Symbol" : "LOWPASSFILTERFREQ",
+      "Size" : [ 333 , 161 , 130 , 80 ] ,
+      "Image" : "None",
+      "Adjustment" : "CL_CONTINUOS",
+      "Default Value" : 8000.000000 ,
+      "Min Value" : 20.000000 ,
+      "Max Value" : 20000.000000 ,
+      "Step Size" : 100.000000 ,
+    }
+  ] ,
+  "IS_HSLIDER" : [
+    {
+      "Type" : "add_lv2_hslider",
+      "Label" : "IMAGE PAN",
+      "Port" : 6 ,
+      "Symbol" : "IMAGEPAN",
+      "Size" : [ 338 , 100 , 120 , 48 ] ,
+      "Image" : "None",
+      "Adjustment" : "CL_CONTINUOS",
+      "Default Value" : 20.000000 ,
+      "Min Value" : -90.000000 ,
+      "Max Value" : 90.000000 ,
+      "Step Size" : 1.000000 ,
+    }
+  ] ,
+  "IS_HSLIDER" : [
+    {
+      "Type" : "add_lv2_hslider",
+      "Label" : "ORIGINAL PAN",
+      "Port" : 7 ,
+      "Symbol" : "ORIGINALPAN",
+      "Size" : [ 268 , 22 , 222 , 59 ] ,
+      "Image" : "None",
+      "Adjustment" : "CL_CONTINUOS",
+      "Default Value" : -20.000000 ,
+      "Min Value" : -90.000000 ,
+      "Max Value" : 90.000000 ,
+      "Step Size" : 1.000000 ,
+    }
+  ] 
+}
